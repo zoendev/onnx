@@ -33,6 +33,6 @@ def make_onnx_file(model, ckpt_path, save_path):
 
 if __name__ == "__main__":
     model = UNet_3Plus(in_channels=1)
-    ckpt_path = ''
-    save_path = ''
+    ckpt_path = '' # directory of pth file
+    save_path = '' # directory of onnx file
     make_onnx_file(model, ckpt_path, save_path)
